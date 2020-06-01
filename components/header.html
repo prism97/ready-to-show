@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ready To Show</title>
+    <!-- MDB icon
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../css/mdb.min.css">
+    <!-- montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../style/header.css">
+
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+
+    <!--Navbar-->
+    <nav class="navbar navbar-dark  mb-4" style="background-image: url('./assets/Hamburger/HamburgerBG.svg'); background-color: #d05858; padding: 10px;">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">
+            <span style="font-weight: bold;" class="brand-name">READY TO SHOW</span>
+        </a>
+
+        <div class="container mr-1" style="width: 40%;">
+            <div class="row" style="width: 100%;">
+                <div class="col-4 p-0 m-0">
+                    <button id="products-btn" style="width: 100%; font-size: small; border: 1px solid white; border-radius: 0px;" class="btn dropdown-toggle m-0 py-2 px-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</button>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">PRODUCTS</a>
+                        <a class="dropdown-item" href="#">CATEGORIES</a>
+                        <a class="dropdown-item" href="#">COUNTRIES</a>
+                    </div>
+                </div>
+                <div class="col-8 p-0 m-0">
+
+                    <input id="search" class="pl-2" style="color: white; width: 100%; height: 100%; background: transparent; border: 1px solid white;" type="text" placeholder="Search">
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler ham-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent23" aria-controls="navbarSupportedContent23" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent23" style="background-image: url('./assets/Hamburger/HamburgerBG.svg'); background-color: #d05656; margin-top: 10px;">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto list-group list-group-horizontal">
+                <li class="nav-item list-group-item">
+                    <a class="nav-link" href="/views/participatingCountries.html">
+                        PARTICIPATING COUNTRIES
+                    </a>
+                </li>
+                <li class="nav-item list-group-item">
+                    <a class="nav-link" href="/views/register.html">REGISTER</a>
+                </li>
+                <li class="nav-item list-group-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item list-group-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+                <li class="nav-item list-group-item">
+                    <a class="nav-link" href="#">LOG IN</a>
+                </li>
+            </ul>
+            <!-- Links -->
+
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 style="color: white;">Learn about our participants!</h3>
+                        <p style="color: white;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="./assets/Hamburger/fair.png" alt="fair" width="500px" height="300px">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
+
+    <!-- End your project here-->
+
+    <script>
+        $(document).ready(function() {
+            $('.ham-button').on('click', function() {
+                $('.animated-icon').toggleClass('open');
+                if ($('.animated-icon').hasClass('open')) {
+                    $('.navbar').css('background-image', 'none');
+                    $('.navbar').css('background-color', 'white');
+                    $('.brand-name').css('color', '#d05858');
+                    $('#products-btn').css('border', '1px solid #d05858');
+                    $('#products-btn').css('background-color', 'white');
+                    $('#products-btn').css('color', '#d05858');
+                    $('#search').css('border', '1px solid #d05858');
+                } else {
+                    $('.navbar').css('background-image', "url('./assets/Hamburger/HamburgerBG.svg')");
+                    $('.navbar').css('background-color', '#d05858');
+                    $('.brand-name').css('color', 'white');
+                    $('#products-btn').css('border', '1px solid white');
+                    $('#products-btn').css('background-color', '#d05858');
+                    $('#products-btn').css('color', 'white');
+                    $('#search').css('border', '1px solid white');
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

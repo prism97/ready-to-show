@@ -1,0 +1,48 @@
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+    position: absolute;
+    top: 0;
+    padding: 7px 0 0 13px;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+    opacity: 0.5;
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+    font-size: 90%;
+    -webkit-transform: translateY(-13px) translateX(10px) scale(0.8);
+    transform: translateY(-13px) translateX(10px) scale(0.8);
+    opacity: 1;
+    background-color: white;
+    color: #d05858;
+    padding: 2px;
+}
+
+.form-control {
+    box-shadow: none;
+    border: 1px solid grey;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1.5px solid #d05858;
+}
+
+#myTab {
+    border: 0px;
+}
+
+#myTab .nav-item .nav-link {
+    color: grey;
+}
+
+#myTab .nav-item .nav-link.active {
+    color: #d05858;
+    border: 0px;
+    border-bottom: 1.5px solid #d05858;
+}
