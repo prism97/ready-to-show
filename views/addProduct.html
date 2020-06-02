@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Ready To Show</title>
+    <link rel="stylesheet" href="/style/register.css">
+    <link rel="stylesheet" href="/style/section.css">
+    <style>
+        .custom-control-input:checked~.custom-control-label::before {
+            background-color: #d05858 !important;
+            border-color: #d05858 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Start your project here-->
+    <div id="header"></div>
+
+    <div class="container my-5">
+        <div class="text-center">
+            <a href="/views/manageProducts.html" class="btn"><i class="mr-2 fas fa-arrow-left"></i>BACK TO PRODUCTS</a>
+            <br><br>
+            <h4>ADD NEW PRODUCT</h4>
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <input type="text" id="title" class="form-control" required>
+                    <label class="form-control-placeholder text-md-center m-0" for="title">Title</label>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="desc" cols="30" rows="5" required></textarea>
+                    <label class="form-control-placeholder text-md-center m-0" for="desc">Description</label>
+                </div>
+                <div class="text-center form-group" style="border: 1px solid lightgrey">
+                    <img class="my-4" src="/assets/Add Product/image.png" alt="image">
+                </div>
+                <div class="d-flex flex-column align-items-stretch" style="border: 1px solid lightgrey">
+                    <div class="mb-3 text-center font-weight-bold" style="background-color: grey; color: white;">TAGS</div>
+                    <div class="col-8 mb-3 form-group align-self-center">
+                        <input type="text" id="tags" class="form-control" required>
+                        <label class="form-control-placeholder text-md-center m-0" for="tags">Enter tags here</label>
+                    </div>
+                    <div class="text-center">
+                        <p>#great #wholesome #feelgood</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mb-3 d-flex flex-column align-items-stretch" style="border: 1px solid lightgrey">
+                    <div class="py-2 mb-3 text-center font-weight-bold" style="background-color: grey; color: white;">SECTION</div>
+                    <div class="ml-2 mb-4 custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="knit" name="defaultExampleRadios">
+                        <label class="custom-control-label" for="knit">Knitwear</label>
+                    </div>
+                    <div class="ml-2 mb-4 custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="textiles" name="defaultExampleRadios" checked>
+                        <label class="custom-control-label" for="textiles">Textiles</label>
+                    </div>
+                    <div class="ml-2 mb-4 custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="service" name="defaultExampleRadios">
+                        <label class="custom-control-label" for="service">Service Company</label>
+                    </div>
+                    <div class="ml-2 mb-4 custom-control custom-radio">
+                        <input type="radio" class="custom-control-input" id="others" name="defaultExampleRadios">
+                        <label class="custom-control-label" for="others">Others</label>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-stretch" style="border: 1px solid lightgrey">
+                    <div class="py-2 mb-3 text-center font-weight-bold" style="background-color: grey; color: white;">CATEGORY</div>
+
+                    <div class="row px-2">
+                        <div class="col-1"><input class="custom-box" type="checkbox"></div>
+                        <div class="col-10"><label>Dresses & Skirts</label></div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-1"><input class="custom-box" type="checkbox"></div>
+                        <div class="col-10"><label>Pants/Bottoms</label></div>
+                    </div>
+                    <div class="row px-2">
+                        <div class="col-1"><input class="custom-box" type="checkbox"></div>
+                        <div class="col-10"><label>Suiting</label></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <div class="btn">PUBLISH</div>
+        </div>
+        <br>
+    </div>
+
+
+    <div id="footer"></div>
+
+    <!-- End your project here-->
+
+    <!-- jQuery -->
+    <script type="text/javascript " src="/js/jquery.min.js "></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript " src="/js/popper.min.js "></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript " src="/js/bootstrap.min.js "></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript " src="/js/mdb.min.js "></script>
+    <!-- Your custom scripts (optional) -->
+    <script src="/index.js "></script>
+
+
+</body>
+
+</html>
