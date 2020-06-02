@@ -20,10 +20,45 @@ h6 {
 .btn {
     background-color: #d05858;
     color: white;
-    border-radius: 0px;
+    border-radius: 5px;
     font-weight: 500;
     font-size: medium;
     padding: 10px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.container {
+    padding: 0px !important;
+}
+
+.row {
+    padding: 1vw 0vw;
+}
+
+.col,
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 0vw 1vw;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #816b6b0f;
 }
 
 .animated-icon {

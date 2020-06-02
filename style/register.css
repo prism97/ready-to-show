@@ -19,6 +19,7 @@
     transform: translateY(-13px) translateX(10px) scale(0.8);
     opacity: 1;
     background-color: white;
+    box-shadow: none;
     color: #d05858;
     padding: 2px;
 }
