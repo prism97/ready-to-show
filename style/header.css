@@ -2,6 +2,15 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -11,9 +20,10 @@ body {
 .btn {
     background-color: #d05858;
     color: white;
-    border-radius: 5px;
+    border-radius: 0px;
     font-weight: 500;
     font-size: medium;
+    padding: 10px;
 }
 
 .animated-icon {
