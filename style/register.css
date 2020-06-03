@@ -30,8 +30,8 @@
 }
 
 .form-control:focus {
-    box-shadow: none;
-    border: 1.5px solid #d05858;
+    box-shadow: none !important;
+    border: 1.5px solid #d05858 !important;
 }
 
 #myTab {
@@ -46,4 +46,9 @@
     color: #d05858;
     border: 0px;
     border-bottom: 1.5px solid #d05858;
+}
+
+#myTab .nav-link:hover {
+    border: none !important;
+    color: #d05858;
 }

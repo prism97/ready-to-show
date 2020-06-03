@@ -13,6 +13,14 @@
             background-color: #d05858 !important;
             border-color: #d05858 !important;
         }
+        
+        .custom-control-input:focus~.custom-control-label::before {
+            box-shadow: none !important;
+        }
+        
+        .custom-box {
+            margin-right: 0.5rem;
+        }
     </style>
 </head>
 
@@ -43,7 +51,7 @@
                     <img class="my-4" src="/assets/Add Product/image.png" alt="image">
                 </div>
                 <div class="d-flex flex-column align-items-stretch" style="border: 1px solid lightgrey">
-                    <div class="mb-3 text-center font-weight-bold" style="background-color: grey; color: white;">TAGS</div>
+                    <div class="py-2 mb-3 text-center font-weight-bold" style="background-color: grey; color: white;">TAGS</div>
                     <div class="col-8 mb-3 form-group align-self-center">
                         <input type="text" id="tags" class="form-control" required>
                         <label class="form-control-placeholder text-md-center m-0" for="tags">Enter tags here</label>
@@ -73,20 +81,22 @@
                         <label class="custom-control-label" for="others">Others</label>
                     </div>
                 </div>
-                <div class="d-flex flex-column align-items-stretch" style="border: 1px solid lightgrey">
-                    <div class="py-2 mb-3 text-center font-weight-bold" style="background-color: grey; color: white;">CATEGORY</div>
+                <div class="container-fluid d-flex flex-column align-items-stretch" style="border: 1px solid lightgrey">
+                    <div class="row py-2 mb-3 font-weight-bold" style="background-color: grey; color: white;">
+                        <div class="mx-auto">CATEGORY</div>
+                    </div>
 
                     <div class="row px-2">
-                        <div class="col-1"><input class="custom-box" type="checkbox"></div>
-                        <div class="col-10"><label>Dresses & Skirts</label></div>
+                        <input class="custom-box" type="checkbox">
+                        <label>Dresses & Skirts</label>
                     </div>
                     <div class="row px-2">
-                        <div class="col-1"><input class="custom-box" type="checkbox"></div>
-                        <div class="col-10"><label>Pants/Bottoms</label></div>
+                        <input class="custom-box" type="checkbox">
+                        <label>Pants/Bottoms</label>
                     </div>
                     <div class="row px-2">
-                        <div class="col-1"><input class="custom-box" type="checkbox"></div>
-                        <div class="col-10"><label>Suiting</label></div>
+                        <input class="custom-box" type="checkbox">
+                        <label>Suiting</label>
                     </div>
                 </div>
 
